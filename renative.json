@@ -1,0 +1,27 @@
+{
+    "platforms": {},
+    "plugins": {},
+    "extendsTemplate": "renative.json",
+    "projectName": "simple-test",
+    "workspaceID": "rnv",
+    "defaults": {
+        "title": "simple-test",
+        "id": "com.mycompany.simple-test",
+        "supportedPlatforms": [
+            "ios",
+            "android",
+            "androidtv",
+            "web",
+            "tvos"
+        ]
+    },
+    "engines": {},
+    "templates": {
+        "renative-template-hello-world": {
+            "version": "0.35.4"
+        }
+    },
+    "currentTemplate": "renative-template-hello-world",
+    "isNew": true,
+    "isMonorepo": false
+}
