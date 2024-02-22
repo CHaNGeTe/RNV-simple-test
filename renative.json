@@ -1,6 +1,30 @@
 {
     "platforms": {},
-    "plugins": {},
+    "plugins": {
+        "react": "source:rnv",
+        "react-art": "source:rnv",
+        "react-dom": "source:rnv",
+        "react-native": "source:rnv",
+        "@react-native-community/cli-platform-ios": {
+            "source": "rnv",
+            "podPostInstall": [
+                "app_ios_deployment_target = Gem::Version.new('{{PLUGIN_DEPLOYMENT_TARGET}}') # Change to your current deployment target",
+                "installer.generated_projects.each do |project|",
+                "project.targets.each do |target|",
+                "target.build_configurations.each do |config|",
+                "pod_ios_deployment_target = Gem::Version.new(config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'])",
+                "if pod_ios_deployment_target <= app_ios_deployment_target",
+                "config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'",
+                "end",
+                "end",
+                "end"
+            ]
+        },
+        "@react-native-community/cli": "source:rnv",
+        "react-native-tvos": "source:rnv",
+        "react-native-web": "source:rnv",
+        "next": "source:rnv"
+    },
     "extendsTemplate": "renative.json",
     "projectName": "simple-test",
     "workspaceID": "rnv",
@@ -22,6 +46,5 @@
         }
     },
     "currentTemplate": "renative-template-hello-world",
-    "isNew": true,
     "isMonorepo": false
 }
