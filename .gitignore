@@ -23,8 +23,7 @@ yarn-error.log
 # RENATIVE
 #-------------------------------
 
-platformBuilds/
-platformAssets/
+platformBuilds/app_ios/Pods
 buildHooks/dist
 renative.local.json
 renative.private.json

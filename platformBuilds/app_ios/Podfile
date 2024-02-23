@@ -1,0 +1,80 @@
+
+platform :ios, '11.0'
+use_frameworks!
+
+
+# ReNative: To allow dynamic plugins via flavours autolinking has to be disabled
+# require_relative '../../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+target 'RNVApp' do
+  pod 'FBLazyVector', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/TypeSafety"
+  pod 'React', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/'
+  pod 'React-Core', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/'
+  pod 'React-CoreModules', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/'
+
+  pod 'React-cxxreact', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/jsinspector'
+  pod 'React-callinvoker', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/callinvoker"
+  pod 'ReactCommon/turbomodule/core', :path => "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'RNGestureHandler', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-reanimated'
+  pod 'RNVectorIcons', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons'
+  pod 'RNCMaskedView', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/@react-native-community/masked-view'
+  pod 'react-native-viewpager', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/@react-native-community/viewpager'
+  pod 'react-native-safe-area-context', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-safe-area-context'
+  pod 'RNScreens', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-screens'
+  pod 'react-native-google-cast', :path => '/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-google-cast/ios'
+
+
+  # ReNative: To allow dynamic plugins via flavours autolinking has to be disabled
+  # use_native_modules!('../..')
+end
+
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
+
+static_frameworks = ['react-native-google-cast']
+
+pre_install do |installer|
+  installer.pod_targets.each do |pod|
+    if static_frameworks.include?(pod.name)
+      def pod.static_framework?;
+        true
+      end
+      def pod.build_type;
+        Pod::BuildType.static_library
+      end
+    end
+  end
+end
+
+
+post_install do |installer|
+  
+end
+
+

@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		087CF81E9E602AE88EC4E83F /* Pods_RNVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925060F95C8C5B820440EBDB /* Pods_RNVApp.framework */; };
+		200132F41F6BF9CF00450340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200132F31F6BF9CF00450340 /* AppDelegate.swift */; };
+		200132FC1F6BF9CF00450340 /* RNVApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 200132FA1F6BF9CF00450340 /* RNVApp.xcdatamodeld */; };
+		200132FE1F6BF9CF00450340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200132FD1F6BF9CF00450340 /* Assets.xcassets */; };
+		207BDA4024AB543F00F32013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207BDA3F24AB543F00F32013 /* LaunchScreen.storyboard */; };
+		20A3B6EF2252512D0084A50B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 207888241FCD3A000015651F /* assets */; };
+		20C4C37A1FE53E0A00D9721E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4C3791FE53E0A00D9721E /* GLKit.framework */; };
+		20C4C37C1FE53E1A00D9721E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4C37B1FE53E1A00D9721E /* ImageIO.framework */; };
+		20C4C37E1FE53E4A00D9721E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4C37D1FE53E4A00D9721E /* libc++.tbd */; };
+		20CB0E7D21C695460010854F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 20CB0E7B21C695460010854F /* images */; };
+		20DEE9D7225238DF00AA9637 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 20DEE9D6225238DF00AA9637 /* main.jsbundle */; };
+		6C539DA2E3824D0C9234EB6F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC2DA824FA3A446D91E0CC62 /* Inter-Light.ttf */; };
+		B1E3A95A5B72455A9BCE08CB /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F20B5B7F3514A22B1C9A2AD /* AntDesign.ttf */; };
+		87F46C8562F74C259C8D4B96 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024929B93D694571A63D57D8 /* Entypo.ttf */; };
+		C2784885F85E46CFB64999D8 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6B6A956B6454F12A8148302 /* EvilIcons.ttf */; };
+		D73D6D053C3E4F08925C7C3B /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4184E9955A104268A71B8B63 /* Feather.ttf */; };
+		935F5A1312A142639174BF26 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE94810B5D0A44CEA8E8560D /* FontAwesome.ttf */; };
+		B2D5A3641D40476BBFA427DC /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8EB9A6E8A784EB3B6988355 /* FontAwesome5_Brands.ttf */; };
+		D5A6B758998349A6B89E5C4E /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3163DD142714EBC96079411 /* FontAwesome5_Regular.ttf */; };
+		A17CB5F21B1A4AA8BADD83F9 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D317351EA0404C0CA28B6882 /* FontAwesome5_Solid.ttf */; };
+		05B53F9CDA694D738038D5EE /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE1B4E9FE945F6B5F7A2A6 /* Fontisto.ttf */; };
+		3A990EC865274B8A8F327DE9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32143318BFA64681886F3721 /* Foundation.ttf */; };
+		95404940ADF745989823474A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED5A201096934A8F9BF2AB27 /* Ionicons.ttf */; };
+		176646218C98445399FC12B2 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 828C506054114BD2AD320463 /* MaterialCommunityIcons.ttf */; };
+		BAB128F31E2E4DF48CF6EBAF /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9881E68D25AE41839B9DB620 /* MaterialIcons.ttf */; };
+		3799504EC9AD467AAA9F3720 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5EEAEB0129E402A95DA53BB /* Octicons.ttf */; };
+		E3810D73DB46462EA7896685 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C01C41181CAF401D8884C27E /* SimpleLineIcons.ttf */; };
+		7F8E908C846A497980B55857 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16BD35BDD0A444CCB937E888 /* Zocial.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		202C7E712190E14100449711 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0782652F658FF043B8F5C682 /* Pods-RNVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNVApp/Pods-RNVApp.release.xcconfig"; sourceTree = "<group>"; };
+		1457A110E23AF3761AE396A6 /* Pods-RNVAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNVAppUITests/Pods-RNVAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		200132F01F6BF9CF00450340 /* RNVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200132F31F6BF9CF00450340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		200132FB1F6BF9CF00450340 /* RNVApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RNVApp.xcdatamodel; sourceTree = "<group>"; };
+		200132FD1F6BF9CF00450340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200133021F6BF9CF00450340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2034B5411FB5CB98001A5872 /* RNVApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RNVApp.entitlements; sourceTree = "<group>"; };
+		207888241FCD3A000015651F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		207BDA3F24AB543F00F32013 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20C4C3791FE53E0A00D9721E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		20C4C37B1FE53E1A00D9721E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		20C4C37D1FE53E4A00D9721E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		20CB0E7B21C695460010854F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		20CEF6F71F9E47330094A59C /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		20DEE9D6225238DF00AA9637 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
+		3471B97B677CE64891C44686 /* Pods-RNVAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNVAppUITests/Pods-RNVAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4EC4EAA4E066BD0502B9DF3F /* Pods-RNVAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNVAppTests/Pods-RNVAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A3295F713AD7DF91D6C2EF3 /* Pods_RNVAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNVAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		925060F95C8C5B820440EBDB /* Pods_RNVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8EFAC6D34EF718C410C11B /* Pods_RNVAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNVAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A51880565C9437FC383DF0 /* Pods-RNVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNVApp/Pods-RNVApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2535CB3354D16A4910CDF1 /* Pods-RNVAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNVAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNVAppTests/Pods-RNVAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC2DA824FA3A446D91E0CC62 /* Inter-Light.ttf */ = {isa = PBXFileReference; name = "Inter-Light.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/appConfigs/base/fonts/Inter-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F20B5B7F3514A22B1C9A2AD /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		024929B93D694571A63D57D8 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6B6A956B6454F12A8148302 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4184E9955A104268A71B8B63 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE94810B5D0A44CEA8E8560D /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8EB9A6E8A784EB3B6988355 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E3163DD142714EBC96079411 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D317351EA0404C0CA28B6882 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7DDE1B4E9FE945F6B5F7A2A6 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		32143318BFA64681886F3721 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED5A201096934A8F9BF2AB27 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		828C506054114BD2AD320463 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9881E68D25AE41839B9DB620 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5EEAEB0129E402A95DA53BB /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C01C41181CAF401D8884C27E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16BD35BDD0A444CCB937E888 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "/Users/dmr24i/Desktop/WIP/simple-test/node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200132ED1F6BF9CF00450340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C4C37E1FE53E4A00D9721E /* libc++.tbd in Frameworks */,
+				20C4C37C1FE53E1A00D9721E /* ImageIO.framework in Frameworks */,
+				20C4C37A1FE53E0A00D9721E /* GLKit.framework in Frameworks */,
+				087CF81E9E602AE88EC4E83F /* Pods_RNVApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200132E71F6BF9CF00450340 = {
+			isa = PBXGroup;
+			children = (
+				2030C437224AE567002469E4 /* Resources */,
+				207888241FCD3A000015651F /* assets */,
+				200132F21F6BF9CF00450340 /* RNVApp */,
+				200132F11F6BF9CF00450340 /* Products */,
+				C00B3C9569C8A0FC45A2BE5B /* Pods */,
+				217F01A475BAA0089C91D383 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		200132F11F6BF9CF00450340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200132F01F6BF9CF00450340 /* RNVApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		200132F21F6BF9CF00450340 /* RNVApp */ = {
+			isa = PBXGroup;
+			children = (
+				20DEE9D6225238DF00AA9637 /* main.jsbundle */,
+				20CB0E7B21C695460010854F /* images */,
+				2034B5411FB5CB98001A5872 /* RNVApp.entitlements */,
+				200132F31F6BF9CF00450340 /* AppDelegate.swift */,
+				200132FD1F6BF9CF00450340 /* Assets.xcassets */,
+				200133021F6BF9CF00450340 /* Info.plist */,
+				200132FA1F6BF9CF00450340 /* RNVApp.xcdatamodeld */,
+				20CEF6F71F9E47330094A59C /* Bridge-Header.h */,
+				207BDA3F24AB543F00F32013 /* LaunchScreen.storyboard */,
+			);
+			path = RNVApp;
+			sourceTree = "<group>";
+		};
+		2030C437224AE567002469E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DA824FA3A446D91E0CC62 /* Inter-Light.ttf */,
+				5F20B5B7F3514A22B1C9A2AD /* AntDesign.ttf */,
+				024929B93D694571A63D57D8 /* Entypo.ttf */,
+				E6B6A956B6454F12A8148302 /* EvilIcons.ttf */,
+				4184E9955A104268A71B8B63 /* Feather.ttf */,
+				DE94810B5D0A44CEA8E8560D /* FontAwesome.ttf */,
+				C8EB9A6E8A784EB3B6988355 /* FontAwesome5_Brands.ttf */,
+				E3163DD142714EBC96079411 /* FontAwesome5_Regular.ttf */,
+				D317351EA0404C0CA28B6882 /* FontAwesome5_Solid.ttf */,
+				7DDE1B4E9FE945F6B5F7A2A6 /* Fontisto.ttf */,
+				32143318BFA64681886F3721 /* Foundation.ttf */,
+				ED5A201096934A8F9BF2AB27 /* Ionicons.ttf */,
+				828C506054114BD2AD320463 /* MaterialCommunityIcons.ttf */,
+				9881E68D25AE41839B9DB620 /* MaterialIcons.ttf */,
+				F5EEAEB0129E402A95DA53BB /* Octicons.ttf */,
+				C01C41181CAF401D8884C27E /* SimpleLineIcons.ttf */,
+				16BD35BDD0A444CCB937E888 /* Zocial.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		217F01A475BAA0089C91D383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20C4C37D1FE53E4A00D9721E /* libc++.tbd */,
+				20C4C37B1FE53E1A00D9721E /* ImageIO.framework */,
+				20C4C3791FE53E0A00D9721E /* GLKit.framework */,
+				925060F95C8C5B820440EBDB /* Pods_RNVApp.framework */,
+				5A3295F713AD7DF91D6C2EF3 /* Pods_RNVAppTests.framework */,
+				AF8EFAC6D34EF718C410C11B /* Pods_RNVAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00B3C9569C8A0FC45A2BE5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7A51880565C9437FC383DF0 /* Pods-RNVApp.debug.xcconfig */,
+				0782652F658FF043B8F5C682 /* Pods-RNVApp.release.xcconfig */,
+				4EC4EAA4E066BD0502B9DF3F /* Pods-RNVAppTests.debug.xcconfig */,
+				FA2535CB3354D16A4910CDF1 /* Pods-RNVAppTests.release.xcconfig */,
+				1457A110E23AF3761AE396A6 /* Pods-RNVAppUITests.debug.xcconfig */,
+				3471B97B677CE64891C44686 /* Pods-RNVAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		200132EF1F6BF9CF00450340 /* RNVApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2001331B1F6BF9D000450340 /* Build configuration list for PBXNativeTarget "RNVApp" */;
+			buildPhases = (
+				46D6CEE2E773CE5689ECE6E4 /* [CP] Check Pods Manifest.lock */,
+				200132EC1F6BF9CF00450340 /* Sources */,
+				200132ED1F6BF9CF00450340 /* Frameworks */,
+				200132EE1F6BF9CF00450340 /* Resources */,
+				47C90D4AD2F08223E16AFD26 /* [CP] Embed Pods Frameworks */,
+				202C7E712190E14100449711 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNVApp;
+			productName = RNVApp;
+			productReference = 200132F01F6BF9CF00450340 /* RNVApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		200132E81F6BF9CF00450340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 900;
+				LastUpgradeCheck = 900;
+				TargetAttributes = {
+					200132EF1F6BF9CF00450340 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 0;
+							};
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.ClassKit = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Multipath = {
+								enabled = 0;
+							};
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 200132EB1F6BF9CF00450340 /* Build configuration list for PBXProject "RNVApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 200132E71F6BF9CF00450340;
+			productRefGroup = 200132F11F6BF9CF00450340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				200132EF1F6BF9CF00450340 /* RNVApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		200132EE1F6BF9CF00450340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A3B6EF2252512D0084A50B /* assets in Resources */,
+				200132FE1F6BF9CF00450340 /* Assets.xcassets in Resources */,
+				20DEE9D7225238DF00AA9637 /* main.jsbundle in Resources */,
+				207BDA4024AB543F00F32013 /* LaunchScreen.storyboard in Resources */,
+				20CB0E7D21C695460010854F /* images in Resources */,
+				6C539DA2E3824D0C9234EB6F /* Inter-Light.ttf in Resources */,
+				B1E3A95A5B72455A9BCE08CB /* AntDesign.ttf in Resources */,
+				87F46C8562F74C259C8D4B96 /* Entypo.ttf in Resources */,
+				C2784885F85E46CFB64999D8 /* EvilIcons.ttf in Resources */,
+				D73D6D053C3E4F08925C7C3B /* Feather.ttf in Resources */,
+				935F5A1312A142639174BF26 /* FontAwesome.ttf in Resources */,
+				B2D5A3641D40476BBFA427DC /* FontAwesome5_Brands.ttf in Resources */,
+				D5A6B758998349A6B89E5C4E /* FontAwesome5_Regular.ttf in Resources */,
+				A17CB5F21B1A4AA8BADD83F9 /* FontAwesome5_Solid.ttf in Resources */,
+				05B53F9CDA694D738038D5EE /* Fontisto.ttf in Resources */,
+				3A990EC865274B8A8F327DE9 /* Foundation.ttf in Resources */,
+				95404940ADF745989823474A /* Ionicons.ttf in Resources */,
+				176646218C98445399FC12B2 /* MaterialCommunityIcons.ttf in Resources */,
+				BAB128F31E2E4DF48CF6EBAF /* MaterialIcons.ttf in Resources */,
+				3799504EC9AD467AAA9F3720 /* Octicons.ttf in Resources */,
+				E3810D73DB46462EA7896685 /* SimpleLineIcons.ttf in Resources */,
+				7F8E908C846A497980B55857 /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46D6CEE2E773CE5689ECE6E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNVApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47C90D4AD2F08223E16AFD26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNVApp/Pods-RNVApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNVApp/Pods-RNVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		200132EC1F6BF9CF00450340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200132FC1F6BF9CF00450340 /* RNVApp.xcdatamodeld in Sources */,
+				200132F41F6BF9CF00450340 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		200133191F6BF9D000450340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.simple-test;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+			};
+			name = Debug;
+		};
+		2001331A1F6BF9D000450340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.simple-test;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+			};
+			name = Release;
+		};
+		2001331C1F6BF9D000450340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A51880565C9437FC383DF0 /* Pods-RNVApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RNVApp/RNVApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RNVApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.simple-test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./RNVApp/Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+			};
+			name = Debug;
+		};
+		2001331D1F6BF9D000450340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0782652F658FF043B8F5C682 /* Pods-RNVApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RNVApp/RNVApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RNVApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.simple-test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./RNVApp/Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		200132EB1F6BF9CF00450340 /* Build configuration list for PBXProject "RNVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200133191F6BF9D000450340 /* Debug */,
+				2001331A1F6BF9D000450340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2001331B1F6BF9D000450340 /* Build configuration list for PBXNativeTarget "RNVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2001331C1F6BF9D000450340 /* Debug */,
+				2001331D1F6BF9D000450340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		200132FA1F6BF9CF00450340 /* RNVApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				200132FB1F6BF9CF00450340 /* RNVApp.xcdatamodel */,
+			);
+			currentVersion = 200132FB1F6BF9CF00450340 /* RNVApp.xcdatamodel */;
+			path = RNVApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 200132E81F6BF9CF00450340 /* Project object */;
+}
